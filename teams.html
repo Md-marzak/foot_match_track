@@ -39,12 +39,35 @@
     rightArrow.addEventListener("click", ()=>{
         teamsSection.scrollLeft += 250; // Scroll left
     })
+
+    // To delete 
+    const teams = [
+        {name: "Arsenal", img: "https://1000logos.net/wp-content/uploads/2018/07/Feyenoord-Logo.png"}, 
+        {name: "Mcity", img: "https://1000logos.net/wp-content/uploads/2017/05/Manchester-City-Logo.png"},
+        {name: "Real", img: "https://1000logos.net/wp-content/uploads/2017/04/Logo-Liverpool.png"},
+        {name: "Arsenal", img: "https://1000logos.net/wp-content/uploads/2018/07/Feyenoord-Logo.png"}, 
+        {name: "Mcity", img: "https://1000logos.net/wp-content/uploads/2017/05/Manchester-City-Logo.png"},
+        {name: "Real", img: "https://1000logos.net/wp-content/uploads/2017/04/Logo-Liverpool.png"},
+        {name: "Arsenal", img: "https://1000logos.net/wp-content/uploads/2018/07/Feyenoord-Logo.png"}, 
+        {name: "Mcity", img: "https://1000logos.net/wp-content/uploads/2017/05/Manchester-City-Logo.png"},
+        {name: "Real", img: "https://1000logos.net/wp-content/uploads/2017/04/Logo-Liverpool.png"},
+        ]
+        
+    teamsSection.textContent ="";
+    for (const team of teams) {
+        teamsSection.innerHTML += `
+            <section class="team">
+                <a class="team-div" href="${team.img}">
+                        <div class="team-logo">
+                            <img src="${team.img}" alt="${team.name}">
+                        </div>
+                </a>
+                <h5 class="team-name">${team.name}</h5>
+            </section>
+        `
+    }
 </script>
 
-<!-- To delete(test phase) -->
-<script>
-    
-</script>
-<!-- End to delet -->
+
 </body>
 </html>

@@ -51,6 +51,9 @@ body{
     padding: .25em;
     border-radius: 50%;
 }
+.teams-container-header .arrows-div i:hover{
+    color: white !important;
+}
 
 .teams-container-header, .teams-section{
     padding: .5em;
@@ -114,4 +117,5 @@ body{
 }
 .team-div .team-logo img{
     width: 100%;
+    object-fit: cover;
 }
