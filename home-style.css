@@ -97,7 +97,8 @@ body {
 }
 .info-item{
     font-size: medium;
-    border-bottom: 0.1px solid #D6A243;
+    border-bottom: 1px solid #D6A243;
+    
     padding: 10px;
 }
 .main_card {
