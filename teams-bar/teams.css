@@ -11,6 +11,7 @@
     --heading-fsize: 20px;
     --subheading-fsize: 16px;
     --page-width: 600px;
+    --secondary-clr: #1B1C21;
 }
 body{
     background-color: var(--background);
@@ -86,7 +87,7 @@ body{
     /* width: 124px; */
     border-radius: 50%;
     padding: 1.8em;
-    background-color: #1B1C21;
+    background-color: var(--secondary-clr);
     position: relative;
     cursor: pointer;
 }
