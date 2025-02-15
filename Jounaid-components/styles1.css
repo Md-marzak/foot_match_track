@@ -1,0 +1,148 @@
+/* Reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling with gradient background */
+  html, body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #2C3E50, #4CA1AF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Main scoreboard container */
+  .scoreboard {
+    /* Glassmorphism effect */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+  
+    /* Layout and spacing */
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  
+    /* Shadow for a more modern look */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Stadium name styling */
+  .stadium-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+  
+  /* Teams and score layout */
+  .teams-score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Team names */
+  .team h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  /* Score layout */
+  .score {
+    display: flex;
+    align-items: center;
+  }
+  
+  .score span {
+    margin: 0 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  /* "FT" label style */
+  .ft {
+    font-size: 0.85rem;
+    font-weight: 400;
+    opacity: 0.7;
+    margin: 0 10px;
+  }
+  
+  /* Scorers section */
+  .scorers {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.95rem;
+  }
+  
+  .scorers-home p,
+  .scorers-away p {
+    margin-bottom: 5px;
+  }
+
+/* Container for the "Last Five Matches" section */
+.last-five-matches {
+    /* Optional glass effect */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+  
+    /* Layout & spacing */
+    max-width: 400px;
+    margin: 0 auto; /* center it if desired */
+    padding: 16px;
+    color: #fff;
+    font-family: sans-serif;
+  }
+  
+  /* Section title */
+  .last-five-matches h3 {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+  }
+  
+  /* Flex container for all match items */
+  .match-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* space between matches */
+  }
+  
+  /* Individual match card */
+  .match-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 8px 12px;
+  }
+  
+  /* Text styles for date, opponent, and result */
+  .match-date,
+  .match-opponent,
+  .match-result {
+    font-size: 0.95rem;
+  }
+  
+  /* Optional color-coding for results */
+  .match-result.win {
+    color: #2ecc71; /* green */
+  }
+  .match-result.draw {
+    color: #f1c40f; /* yellow */
+  }
+  .match-result.lose {
+    color: #e74c3c; /* red */
+  }
+    
